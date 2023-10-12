@@ -5,6 +5,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo twrp_rosemary-user
-add_lunch_combo twrp_rosemary-userdebug
 add_lunch_combo twrp_rosemary-eng
