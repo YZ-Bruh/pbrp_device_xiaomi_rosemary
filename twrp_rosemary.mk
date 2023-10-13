@@ -23,6 +23,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 # Inherit from rosemary device
 $(call inherit-product, device/redmi/rosemary/device.mk)
 
+# Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
 # Inherit some common TWRP stuff
 $(call inherit-product, vendor/twrp/config/common.mk)
 
@@ -35,4 +38,3 @@ PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_RELEASE_NAME := Redmi Note 10S
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
